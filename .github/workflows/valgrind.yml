@@ -13,15 +13,15 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: valgrind
+    - name: apt install dependency
       run: |
        sudo apt-get -y install valgrind
-       valgrind -v --leak-check=full --show-leak-kinds=all ./bin
+       sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
            
     - name: make test
       run : |
                make test -C MiniProject_C/3_Implementation/
-               valgrind ./MiniProject_C/3_Implementation/build/Test_quiz.out
+               valgrind ./MiniProject_C/3_Implementation/build/test_quiz.out
        
          
         
