@@ -1,5 +1,4 @@
-name: Windows C/C++ CI
-
+name: Build CI windows
 on:
   push:
     branches: [ main ]
@@ -14,6 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: build
-      run: gcc Covid_quiz.c -o Covid_quiz.exe
-    - name: run
-      run: .\Covid_quiz.exe
+      run: make MiniProject_C/3_Implementation
