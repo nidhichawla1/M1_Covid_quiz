@@ -13,11 +13,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: apt-get update
+    - name: apt install dependency
       run: |
-       sudo apt-get -y install valgrind
-       sudo apt-get -y install libcunit1 libcunit-doc libcunit-dev
+     sudo apt-get -y install valgrind
+     sudo apt-get -y install libcunit1 libcunit-doc libcunit-dev
     - name: make test
       run: |
-               make test -C MiniProject_C/3_Implementation
-               valgrind ./MiniProject_C/3_Implementation/build/test_Covid_quiz.out
+     make test -C MiniProject_C/3_Implementation
+     valgrind ./MiniProject_C/3_Implementation/build/test_Covid_quiz.out
