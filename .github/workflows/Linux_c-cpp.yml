@@ -1,0 +1,19 @@
+name: Linux C/C++ CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: build
+      run: gcc Covid_quiz.c -o Covid_quiz.exe
+    - name: run
+      run: ./Covid_quiz.exe
