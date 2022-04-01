@@ -1,1 +1,3 @@
+Covid Quiz
 
+Covid pandemic has increased over the world drastically and it is necessary to check people’s awareness around this virus. We have designed a quiz master that will help in assessment of knowledge among people and help governments formulate public policies accordingly. People are encouraged to take quiz as there is a free prize or cash voucher on answering all the questions correctly. This tool will not only help in testing people’s awareness but also encourage them to gain more knowledge around this subject
