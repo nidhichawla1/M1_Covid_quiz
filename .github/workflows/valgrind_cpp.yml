@@ -15,7 +15,6 @@ jobs:
     - uses: actions/checkout@v3
     - name: valgrind
       run: sudo apt-get -y install valgrind
-        sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
     - name: make test
       run: make test -C MiniProject_C/3_Implementation/
         valgrind ./MiniProject_C/3_Implementation/build/Test_Covid_quiz.out
